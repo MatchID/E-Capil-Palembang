@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/tengah_utama"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_dialog_email"
+            android:paddingTop="20dp"
+            android:text="Akta"
+            android:textColor="#fff"
+            android:elegantTextHeight="false"
+            android:id="@+id/bt1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_dialog_map"
+            android:paddingTop="20dp"
+            android:text="KTP"
+            android:textColor="#fff"
+            android:id="@+id/bt2"
+            />
+    </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_dialog_info"
+            android:paddingTop="20dp"
+            android:text="Info"
+            android:textColor="#fff"
+            android:id="@+id/bt3"
+            />
+    </LinearLayout>

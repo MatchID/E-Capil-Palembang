@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgcapil3"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"></LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU UTAMA KTP"
+        android:textSize="23dip"
+        android:textColor="#000000"
+        android:fontFamily="tahoma"
+        android:id="@+id/pesan1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silakan pilih menu dibawah ini untuk mengisi permohonanan anda"
+        android:textColor="#000000"
+        android:fontFamily="tahoma"
+        android:id="@+id/pesan2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"></LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KTP-el Baru  Perekaman"
+        android:background="@drawable/tombol"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/button1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KTP-el Karena Perubahan Elemen"
+        android:background="@drawable/tombol"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/button2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KTP-el Karena Rusak"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/tombol"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/button3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KTP-el Karena Hilang"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/tombol"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/button4" />
+
+
+</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="120dip"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>

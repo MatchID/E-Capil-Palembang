@@ -1,0 +1,87 @@
+<style>
+    div#contentBlock {
+    margin:0 auto;
+    padding:0;
+    border-radius:1.25em;
+    width:92%; /*Percentage of maxwidthwrapper*/
+    display:block;
+    background-color:#eeeded;
+    -moz-box-shadow:0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow:0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    -o-box-shadow:0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow:0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    div#menuWrapper {
+    margin:0 auto;
+    padding:0;
+    width:100%; /* Inside contentBlock*/
+    }
+    ul#mainMenu {
+    margin:0 auto;
+    padding:0;
+    }
+    ul#mainMenu li {
+    display:block;
+    list-style-type:none outside none;
+    padding:0;
+    text-align:left;
+    border-top:1px #d0cccc solid;
+    }
+    ul#mainMenu li#topItem {
+    border-top:none;
+    }
+    ul#mainMenu li a {
+    padding:0.7em 1em; /*Top-Bottom and Right-Left*/
+    text-decoration:none !important;
+    display:block;
+    font-size:1em;
+    font-family:Helvetica,Arial,sans-serif;
+    font-weight:bold;
+    color:#333;
+    background: url("../images/arrow-r.png") no-repeat scroll right center transparent;
+    background-position: 96% 50%; /*Horizontal, Vertical - Used To Position The Arrow Images*/
+    }
+    ul#mainMenu li a:active {
+    color:#fff;
+    text-shadow:0pt 1px 1px rgb(25, 75, 126);/*Height, vertical, blur, color*/
+    /*In order to get background image plus a gradient, you must format it like the following:*/
+    background: #47ce12; /* Old browsers */
+    background: url("../images/arrow-r.png") no-repeat,-moz-linear-gradient(top,  #47ce12 0%, #2eaa00 100%); /* FF3.6+ */
+    background: url("../images/arrow-r.png") no-repeat,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#47ce12), color-stop(100%,#2eaa00)); /* Chrome,Safari4+ */
+    background: url("../images/arrow-r.png") no-repeat,-webkit-linear-gradient(top,  #47ce12 0%,#2eaa00 100%); /* Chrome10+,Safari5.1+ */
+    background: url("../images/arrow-r.png") no-repeat,-o-linear-gradient(top,  #47ce12 0%,#2eaa00 100%); /* Opera 11.10+ */
+    background: url("../images/arrow-r.png") no-repeat,-ms-linear-gradient(top,  #47ce12 0%,#2eaa00 100%); /* IE10+ */
+    background: url("../images/arrow-r.png") no-repeat,linear-gradient(to bottom,  #47ce12 0%,#2eaa00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47ce12', endColorstr='#2eaa00',GradientType=0 ); /* IE6-9 */
+    background-position: 96% 50%; /*Horizontal, Vertical - Used To Position The Arrow Images*/
+    }
+    a#roundedTopLink {
+    border-top-left-radius:1.25em; /*Matches border-radius of contentBlock*/
+    border-top-right-radius:1.25em; /*Matches border-radius of contentBlock*/
+    }
+    a#roundedBottomLink {
+    border-bottom-left-radius:1.25em; /*Matches border-radius of contentBlock*/
+    border-bottom-right-radius:1.25em; /*Matches border-radius of contentBlock*/
+    }
+</style>
+
+
+<div id="contentBlock">
+
+    <div id="menuWrapper">
+
+        <ul id="mainMenu">
+            <li id="topItem"><a id="roundedTopLink" href="introduction.php" target="_self">Pengumuman</a></li>
+
+
+            <li><a href="learn-more.php" target="_self">  Internet tidak ada koneksi</li>
+
+            <li><a id="roundedBottomLink" href="" target="_self">   </a></li>
+        </ul>
+
+    </div>
+
+</div>
+ 

@@ -1,0 +1,369 @@
+<script type="text/javascript">
+
+        function showToast(){
+            var NIK=document.getElementById("NIK").value;
+            var NoK=document.getElementById("NoKK").value;
+            var Nama=document.getElementById("Nama").value;
+            var jk1=document.getElementById("JenisKel1").value;
+            var dlhr=document.getElementById("dilahirkan").value;
+            var tmp1=document.getElementById("Tempat").value;
+            var har=document.getElementById("Hari").value;
+            var Pukul=document.getElementById("Pukul").value;
+            var tgl=document.getElementById("Tanggal").value;
+            var JKelahiran=document.getElementById("JKelahiran").value;
+            var kelahiranKe=document.getElementById("kelahiranKe").value;
+            var PenolongKelahiran=document.getElementById("PenolongKelahiran").value;
+            var Berat=document.getElementById("Berat").value;
+            var Panjang=document.getElementById("Panjang").value;
+
+            var NIKIbu=document.getElementById("NIKIbu").value;
+            var TLIbu=document.getElementById("TLIbu").value;
+            var AlamatIbu=document.getElementById("AlamatIbu").value;
+            var UmurIbu=document.getElementById("UmurIbu").value;
+            var kwaIbu=document.getElementById("kwaIbu").value;
+            var Kebangsaan=document.getElementById("Kebangsaan").value;
+            var TglKawinIbu=document.getElementById("TglKawinIbu").value;
+
+
+
+            var NIKAyah=document.getElementById("NIKAyah").value;
+            var TLAyah=document.getElementById("TLAyah").value;
+            var AlamatAyah=document.getElementById("AlamatAyah").value;
+            var UmurAyah=document.getElementById("UmurAyah").value;
+            var kwaAyah=document.getElementById("kwaAyah").value;
+            var KebangsaanAyah=document.getElementById("KebangsaanAyah").value;
+            var TglKawinAyah=document.getElementById("TglKawinAyah").value;
+
+
+            var NIKPelapor=document.getElementById("NIKPelapor").value;
+            var NamaPelapor=document.getElementById("NamaPelapor").value;
+            var UmurPelapor=document.getElementById("UmurPelapor").value;
+            var PekerjaanPelapor=document.getElementById("PekerjaanPelapor").value;
+            var AlamatPelapor=document.getElementById("AlamatPelapor").value;
+            var DesaPelapor=document.getElementById("DesaPelapor").value;
+            var KotaPelapor=document.getElementById("KotaPelapor").value;
+            var KecamatanPelapor=document.getElementById("KecamatanPelapor").value;
+            var ProvinsiPelapor=document.getElementById("ProvinsiPelapor").value;
+
+
+            var NamaSaksi1=document.getElementById("NamaSaksi1").value;
+            var UmurSaksi1=document.getElementById("UmurSaksi1").value;
+            var PekerjaanSaksi1=document.getElementById("PekerjaanSaksi1").value;
+            var AlamatSaksi1=document.getElementById("AlamatSaksi1").value;
+            var DesaSaksi1=document.getElementById("DesaSaksi1").value;
+            var KotaSaksi1=document.getElementById("KotaSaksi1").value;
+            var KecamatanSaksi1=document.getElementById("KecamatanSaksi1").value;
+            var ProvinsiSaksi1=document.getElementById("ProvinsiSaksi1").value;
+
+
+            var NamaSaksi2=document.getElementById("NamaSaksi2").value;
+            var UmurSaksi2=document.getElementById("UmurSaksi2").value;
+            var PekerjaanSaksi2=document.getElementById("PekerjaanSaksi2").value;
+            var AlamatSaksi2=document.getElementById("AlamatSaksi2").value;
+            var DesaSaksi2=document.getElementById("DesaSaksi2").value;
+            var KotaSaksi2=document.getElementById("KotaSaksi2").value;
+            var KecamatanSaksi2=document.getElementById("KecamatanSaksi2").value;
+            var ProvinsiSaksi2=document.getElementById("ProvinsiSaksi2").value;
+
+
+
+            var satu=NoK+"-"+NIK+"-"+Nama+"-"+jk1+"-"+dlhr+"-"+tmp1+"-"+har+"-"+Pukul+"-"+tgl+"-"+JKelahiran+"-"+kelahiranKe+"-"+PenolongKelahiran+"-"+ Berat +"-"+ Panjang +"-" ;
+            var dua=NIKIbu +"-"+ TLIbu +"-"+ AlamatIbu +"-"+ UmurIbu +"-"+ kwaIbu +"-"  ;
+            var tiga=NIKAyah +"-"+ TLAyah +"-"+  AlamatAyah +"-"+ UmurAyah +"-"+ kwaAyah +"-"+ KebangsaanAyah +"-"+ TglKawinAyah +"-"  ;
+
+            var empat=NIKPelapor +"-"+ NamaPelapor +"-"+  UmurPelapor +"-"+ PekerjaanPelapor +"-"+ AlamatPelapor +"-"+ DesaPelapor +"-"+ KotaPelapor +"-"+ KecamatanPelapor +"-"+ ProvinsiPelapor   ;
+            var lima=NamaSaksi1 +"-"+ UmurSaksi1 +"-"+ PekerjaanSaksi1 +"-"+  AlamatSaksi1  +"-"+ DesaSaksi1 +"-"+ KotaSaksi1  +"-"+ KecamatanSaksi1  +"-"+ ProvinsiSaksi1;
+            var enam=NamaSaksi2 +"-"+ UmurSaksi2 +"-"+ PekerjaanSaksi2 +"-"+  AlamatSaksi2  +"-"+ DesaSaksi2 +"-"+ KotaSaksi2  +"-"+ KecamatanSaksi2  +"-"+ ProvinsiSaksi2;
+
+            var message =satu +""+ dua +""+ tiga +""+ empat +""+ lima +""+ enam;
+
+
+            var lengthLong =true;
+
+            app.makeToast(message, lengthLong);
+            return false;
+        }
+
+
+        window.onload = function(){
+            var form = document.getElementById("form");
+            form.onsubmit = showToast;
+        }
+
+       function piliha(){
+            showToast();
+       }
+
+
+    </script>
+
+
+
+<style>
+
+    .kec {
+
+    width: 14%;    font-size:11px;    border: none;
+    padding:4px;    border-bottom: solid 1px #1abc9c;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #0e6252;
+    }
+
+    .kec:focus, input:valid {
+    box-shadow: none;    outline: none;    background-position: 0 0;
+    }
+
+    .kec::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .kec:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: #1abc9c;     font-size: 11px;    -webkit-transform: translateY(-20px);    transform: translateY(-20px);    visibility: visible !important;
+    }
+
+    .kec2 {
+
+    width: 45%;    font-size:11px;    border: none;
+    padding:4px;    border-bottom: solid 1px #1abc9c;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 46%;
+    background-repeat: no-repeat;
+    color: #0e6252;
+    }
+
+    .kec2:focus, input:valid {
+    box-shadow: none;    outline: none;    background-position: 0 0;
+    }
+
+    .kec2::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .kec2:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: #1abc9c;     font-size: 11px;    -webkit-transform: translateY(-20px);    transform: translateY(-20px);    visibility: visible !important;
+    }
+
+    .holo {
+    font-size:11px;    width: 98%;    padding:4px;    border: none;
+    border-bottom: solid 1px #1abc9c;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #0e6252;
+    }
+
+    .holo:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    }
+
+    .holo::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .holo:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: #1abc9c;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+    }
+
+    body{
+    color: #0e6252;
+    font-size:11px;
+    font-family:tahoma;
+    }
+
+    button{
+    border:1px solid green;
+    background-color: #1abc9c;
+    width:98%;
+    height:40px;
+    }
+
+</style>
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+<h2>Data Bayi</h2>
+<input type='text' id=NIK class='holo form-group'  placeholder ="NIK"  required   >
+<input type='text' id=NoKK class='holo form-group'  placeholder ="No KK"   required   >
+<input type='text' id=Nama class='holo form-group'  placeholder ="Nama" required >
+<select id=JenisKel1 class='holo form-group'>
+    <option value="">Jenis Kelamin</option>
+    <option value="L">L</option>
+    <option value="P">P</option>
+</select>
+
+
+<select id=dilahirkan class="holo form-group">
+    <option value="">-- Dilahirkan --</option>
+    <option value="Rumah Sakit">Rumah Sakit</option>
+    <option value="Puskesmas">Puskesmas</option>
+    <option value="Polindes">Polindes</option>
+    <option value="Rumah">Rumah</option>
+    <option value="Rumah">dll</option>
+
+</select>
+
+
+
+<input type='text' id=Tempat class='holo form-group'  placeholder ="Tempat" required >
+
+<select id=Hari class='kec2 form-group'>
+    <option value="">Hari</option>
+    <option value="Senin">Senin</option>
+    <option value="Selasa">Selasa</option>
+    <option value="Rabu">Rabu</option>
+    <option value="Kamis">Kamis</option>
+    <option value="Jumat">Jumat</option>
+    <option value="Sabtu">Sabtu</option>
+    <option value="Minggu">Minggu</option>
+</select>
+
+<input type='text' id=Tanggal class='kec2 form-group' placeholder ="Tanggal" required > /
+<input type='text' id=Tahun class='kec2 form-group' placeholder ="Tahun" required > /
+<input type='text' id=Pukul class='kec2 form-group' placeholder ="Pukul" required > 	<br>
+
+
+
+<select id=JKelahiran class="holo form-group">
+    <option value="">Jenis Kelahiran </option>
+    <option value="Tunggal">Tunggal</option>
+    <option value="Kembar2">Kembar2</option>
+    <option value="Kembar3">Kembar3</option>
+    <option value="Kembar4">Kembar4</option>
+    <option value="DLL">DLL</option>
+</select>
+
+<select id=kelahiranKe class="holo form-group">
+    <option value="">Kelahiran Ke </option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+
+</select>
+
+<select id=PenolongKelahiran class="holo form-group">
+    <option value="">Penolong Kelahiran   </option>
+    <option value="Dokter">Dokter</option>
+    <option value=" Bidan / Perawat"> Bidan / Perawat</option>
+    <option value="Dukun">Dukun</option>
+    <option value="Lainnya">Lainnya</option>
+
+</select>
+
+
+
+
+<input type='text' id=Berat class="holo form-group"  placeholder ="Berat Bayi" required >
+<input type='text' id=Panjang class="holo form-group"  placeholder ="Panjang Bayi" required >
+
+<h2>Data Ibu</h2>
+<input type='text' id=NIKIbu class='holo form-group'  placeholder ="NIK Ibu" required >
+<input type='text' id=TLIbu class='holo form-group'  placeholder ="Tempat Lahir Ibu" required >
+<input type='text' id=AlamatIbu class='holo form-group'  placeholder ="Alamat Ibu" required >
+<input type='text' id=UmurIbu class='kec2 form-group'  placeholder ="Umur Ibu" required >
+
+<select id=kwaIbu class='kec2 form-group'>
+    <option value="">Kwarganegaraan</option>
+    <option value="Wni">Wni</option>
+    <option value=" Wna">Wna</option>
+
+
+</select>
+
+
+
+
+<input type='text' id=Kebangsaan class='holo form-group'  placeholder ="Kebangsaan" required >
+<input type='text' id=TglKawinIbu class='holo form-group'  placeholder ="Tanggal Pencatan Perkawinan 20-02-1983" required > <br>
+
+
+
+
+<h2>Data Ayah</h2>
+<input type='text' id=NIKAyah class='holo form-group'  placeholder ="NIK Ayah" required >
+<input type='text' id=TLAyah class='holo form-group'  placeholder ="Tempat Lahir Ayah" required >
+<input type='text' id=AlamatAyah class='holo form-group'  placeholder ="Alamat Ayah" required >
+<input type='text' id=UmurAyah class='kec2 form-group'  placeholder ="Umur Ayah" required >
+
+<select id=kwaAyah class='kec2 form-group'>
+    <option value="">Kwarganegaraan </option>
+    <option value="Wni">Wni</option>
+    <option value=" Wna">Wna</option>
+
+
+</select>
+<input type='text' id=KebangsaanAyah class='holo form-group'  placeholder ="Kebangsaan" required >
+<input type='text' id=TglKawinAyah class='holo form-group'  placeholder ="Tanggal Pencatan Perkawinan 20-02-1983" required > <br>
+
+
+<h2>Pelapor   </h2>
+<input type='text' id=NIKPelapor class='holo form-group'  placeholder ="NIK  Pelapor" required >
+<input type='text' id=NamaPelapor class='holo form-group'  placeholder ="Nama Lengkap" required >
+<input type='text' id=UmurPelapor class='kec2 form-group' placeholder ="Umur" required ><br>
+<input type='text' id=PekerjaanPelapor class='holo form-group'  placeholder ="Pekerjaan" required >
+<input type='text' id=AlamatPelapor class='holo form-group'  placeholder ="Alamat" required >
+<input type='text' id=DesaPelapor class='kec2 form-group' placeholder ="Desa / Kelurahan" required >
+<input type='text' id=KotaPelapor class='kec2 form-group' placeholder ="Kab / Kota" required > <br>
+<input type='text' id=KecamatanPelapor class='kec2 form-group' placeholder ="Kecamatan" required >
+<input type='text' id=ProvinsiPelapor class='kec2 form-group' placeholder ="Provinsi" required >
+
+
+
+
+
+
+
+<h2>Saksi I  </h2>
+<input type='text' id=NIKSaksi1 class='holo form-group'  placeholder ="NIK  Saksi I" required >
+<input type='text' id=NamaSaksi1 class='holo form-group'  placeholder ="Nama Lengkap" required >
+<input type='text' id=UmurSaksi1 class='kec2 form-group' placeholder ="Umur" required ><br>
+<input type='text' id=PekerjaanSaksi1 class='holo form-group'  placeholder ="Pekerjaan" required >
+<input type='text' id=AlamatSaksi1 class='holo form-group'  placeholder ="Alamat" required >
+<input type='text' id=DesaSaksi1 class='kec2 form-group' placeholder ="Desa / Kelurahan" required >
+<input type='text' id=KotaSaksi1 class='kec2 form-group' placeholder ="Kab / Kota" required > <br>
+<input type='text' id=KecamatanSaksi1 class='kec2 form-group' placeholder ="Kecamatan" required >
+<input type='text' id=ProvinsiSaksi1 class='kec2 form-group' placeholder ="Provinsi" required >
+
+
+<h2>Saksi II  </h2>
+<input type='text' id=NIKSaksi2 class='holo form-group'  placeholder ="NIK  Saksi" required >
+<input type='text' id=NamaSaksi2 class='holo form-group'  placeholder ="Nama Lengkap" required >
+<input type='text' id=UmurSaksi2 class='kec2 form-group' placeholder ="Umur" required ><br>
+<input type='text' id=PekerjaanSaksi2 class='holo form-group'  placeholder ="Pekerjaan" required >
+<input type='text' id=AlamatSaksi2 class='holo form-group'  placeholder ="Alamat" required >
+<input type='text' id=DesaSaksi2 class='kec2 form-group' placeholder ="Desa / Kelurahan" required >
+<input type='text' id=KotaSaksi2 class='kec2 form-group' placeholder ="Kab / Kota" required > <br>
+<input type='text' id=KecamatanSaksi2 class='kec2 form-group' placeholder ="Kecamatan" required >
+<input type='text' id=ProvinsiSaksi2 class='kec2 form-group' placeholder ="Provinsi" required >
+
+
+<h2>Upload Foto</h2>
+<input type=button onclick="piliha()"   value="Foto KK"><br><br>
+
+<button>Kirim </button>
+
+
+ 
